@@ -1,0 +1,40 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    border: 2px solid green;
+    padding: 2rem;
+}
+
+#content>*{
+    border: 2px solid green;
+    padding: 1rem;
+    width: 60%;
+    text-align: center;
+    
+}
+
+body{
+    padding: 2rem;
+}
+
+#tab{
+    display: flex;
+    gap: 2rem;
+    border: 1px solid red;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+

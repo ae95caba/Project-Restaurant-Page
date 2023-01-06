@@ -1,0 +1,45 @@
+import menu from './menu';
+import home from './home';
+import contact from './contact';
+
+//tab
+const tab = () =>{
+
+const tabDiv = document.createElement("div");
+tabDiv.id = "tab";
+
+//////////////////////////////////////////////
+const buttonHome = document.createElement("button");
+buttonHome.id = "home";
+buttonHome.innerText = "Pagina de inicio"
+tabDiv.appendChild(buttonHome);
+buttonHome.addEventListener("click", ()=>{
+    content.remove();
+    home();
+});
+
+//////////////////////////////////////////////
+
+const buttonMenu = document.createElement("button");
+buttonMenu.id = "menu";
+buttonMenu.innerText = "Menu"
+tabDiv.appendChild(buttonMenu);
+buttonMenu.addEventListener("click", ()=>{
+    content.remove();
+    menu();
+});
+//////////////////////////////////////////////////
+const buttonContact = document.createElement("button");
+buttonContact.id = "contact";
+buttonContact.innerText = "Contacto"
+tabDiv.appendChild(buttonContact);
+buttonContact.addEventListener("click", ()=>{
+    content.remove();
+    contact();
+});
+
+//////////////////////////////////////////////
+document.body.insertBefore(tabDiv, document.body.firstChild);
+
+}
+export default tab;
